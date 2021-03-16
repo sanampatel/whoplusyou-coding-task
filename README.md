@@ -12,3 +12,13 @@ Postman Env
 ## Database Structure
 
 ![Database Structure](https://i.imgur.com/vUa0cOE.png)
+
+## Setup Command
+
+```sh
+composer install
+cp .env.example .env
+php artisan key:generate
+composer dump-autoload
+php artisan db:seed
+```
